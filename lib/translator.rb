@@ -29,9 +29,9 @@ def get_japanese_emoticon(file, emoticon)
   emote_hash = load_library(file)
   message = ""
   
-  emote_hash['get_emoticon'].each do |english, japenese|
+  emote_hash['get_emoticon'].each do |english, japenese_emote|
     if english == emoticon
-      message = japenese
+      message = japenese_emote
     end 
   end 
   
