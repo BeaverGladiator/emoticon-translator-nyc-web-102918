@@ -41,8 +41,8 @@ def get_english_meaning(file, emoticon)
   emote_hash = load_library(file)
   message = ""
   
-  emote_hash['get_meaning'].each do |japenese_emote, meaning|
-    if japenese_emote == emoticon
+  emote_hash['get_meaning'].each do |japenese, meaning|
+    if japenese == emoticon
       message = meaning
     end 
   end 
