@@ -1,6 +1,12 @@
 # require modules here
 require "pry"
 require "yaml"
+<<<<<<< HEAD
+=======
+emotes = YAML.load_file("lib/emoticons.yml")
+
+binding.pry
+>>>>>>> c7165b0219258a39daa5cbe25a66bf40d0bb473c
 
 def load_library(file)
   # code goes here
@@ -41,8 +47,8 @@ def get_english_meaning(file, emoticon)
   emote_hash = load_library(file)
   message = ""
   
-  emote_hash['get_meaning'].each do |japenese, meaning|
-    if japenese == emoticon
+  emote_hash['get_meaning'].each do |japenese_emote, meaning|
+    if japenese_emote == emoticon
       message = meaning
     end 
   end 
